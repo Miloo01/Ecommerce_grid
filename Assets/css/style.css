@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    
     filter: drop-shadow(0.2rem 0 0.2rem rgba(0, 0, 0, 0.2));
-   
 }   
 
 
@@ -25,31 +23,57 @@ header {
     background-color: lightblue;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 4rem;
+    justify-content: space-around;
+    height: 5rem;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: rgba(76, 72, 72, 0.384);
+    background: linear-gradient(135deg, #b9c8c7, #86c681, #b9c8c7);;
+    padding-right: 5rem;
+}
+
+.logo {
+    height: 5rem;
+    width: 9rem;
+    
+}
 
 
-   
+.nav{
+    display: flex;
+    gap: 3rem;
+    font-size: small;
+    margin-left: 5rem;
+}
+
+#typewriter {
+  border-right: 2px solid #333;
+  padding-right: 4px;
+  animation: blink-cursor 0.7s steps(1) infinite;
+  font-size: 1.5rem;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: #333; }
+  50% { border-color: transparent; }
 }
 
 menu {
     grid-area: menu;
-    background-color:  rgba(76, 72, 72, 0.384);
+    background-color:  rgba(172, 168, 168, 0.384);
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
     padding-left: 2rem;
-    
+    text-transform: uppercase;
+
 }
 
 .menu-list a {
     text-decoration: none;
-    color: rgb(75, 73, 73);
+    color: #353232;
+    
 }
 
 .item1 p{
@@ -68,12 +92,15 @@ menu {
 
 main {
     grid-area: main;
-    background-color: rgba(215, 209, 209, 0.384);
+    background-color: rgb(213, 209, 209);
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    padding-top: 2rem
+    padding-top: 2rem;
+  
+    
+
 }
 
 .card {
@@ -97,13 +124,13 @@ main {
 .card-body a {
     text-decoration: solid;
     color: black;
-    background-color: rgb(74, 66, 66);
+    background-color: #86c681;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 2rem;
     margin-top: 2rem;
-    color: rgb(197, 9, 6);
+    
 }
 
 .card-body h5 {
@@ -115,16 +142,23 @@ main {
 
 .card-body p {
     font-size: 0.8rem;
-    color: white;
+    color: #353232;
+}
+
+.card-text span{
+   font-size: larger;
+   text-shadow: #86c681 0.1rem 0.1rem 0.2rem;
 }
 
 footer {
     grid-area: footer;
     background-color:  rgba(76, 72, 72, 0.384);
+    background: linear-gradient(135deg, #b9c8c7, #ff9f1c);
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    
+    background: linear-gradient(135deg, #b9c8c7, #86c681, #b9c8c7);
 }
+
